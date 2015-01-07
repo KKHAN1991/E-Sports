@@ -1,0 +1,257 @@
+
+//Article
+#front-page-latest-posts {
+  @extend .container;
+  margin-top: 20px;
+  height: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+.article-main {
+  @extend .row;
+  border: 1px solid #cbcbcb;
+  margin-bottom: 25px;
+  min-height: 200px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+
+}
+
+.article-content {
+  @extend .row;
+  padding: 10px;
+  min-height: 160px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.article-content-meta {
+  @extend .col-sm-1;
+  @extend .col-xs-12;
+  text-align: center;
+  min-height: 160px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+.article-content-meta-time {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVQImWNgQAKnT5/+TyqHgYEBAMobDYEBnaJNAAAAAElFTkSuQmCC) repeat;
+  padding: 10px;
+}
+.article-content-meta-time-day {
+  font-size: 1.5em;
+  font-weight:600;
+  padding:5px;
+}
+
+.article-content-meta-author {
+  margin-top: 30px;
+  color: white;
+  background-color: #303030;
+  padding: 5px;
+  word-wrap: break-word;
+  font-size: 0.9em;
+  font-weight:400;
+
+}
+
+
+.article-content-main {
+  @extend .col-sm-8;
+
+
+}
+
+.article-content-main h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight:600;
+  margin-bottom: 5px;
+}
+.article-content-main p {
+  font-size:13px;
+}
+
+.article-content-image {
+  @extend .col-sm-3;
+  @extend .col-xs-12;
+//  min-height: 160px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.article-content-image img {
+  border: 1px solid #cbcbcb;
+}
+
+.article-footer {
+  border-top: 1px solid #cbcbcb;
+  @extend .row;
+  min-height: 30px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+}
+
+.article-footer-cat {
+  @extend .col-sm-9;
+  @extend .col-xs-12;
+  border-right: 1px solid #cbcbcb !important;
+
+}
+
+.article-footer-cat p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 0.9em;
+  font-weight:400;
+
+}
+
+.article-footer-readmore {
+  @extend .col-sm-3;
+  @extend .col-xs-12;
+  text-align: center;
+
+}
+
+.article-footer-readmore p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 0.9em;
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .article-content-meta-time {
+    font-size: 9px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  //Article
+  #front-page-latest-posts {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .article-main {
+    border: 1px solid #cbcbcb;
+    margin-bottom: 15px;
+    min-height: initial;
+    width: 100% !important;
+  }
+  .article-content {
+    padding: 10px;
+    min-height: initial;
+    display: table;
+    width: 100% !important;
+
+  }
+
+  .article-content-meta {
+    text-align: initial;
+    min-height: initial;
+    padding: 0 !important;
+    margin-top: 10px;
+  }
+  .article-content-meta:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+  }
+  .article-content-meta:after {
+    clear: both;
+  }
+  .article-content-meta {
+    zoom: 1;
+  }
+
+  .article-content-meta-time {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVQImWNgQAKnT5/+TyqHgYEBAMobDYEBnaJNAAAAAElFTkSuQmCC) repeat;
+    padding: 5px;
+    display: inline;
+    float: left;
+  }
+  .article-content-meta-time-day {
+    display: inline-block !important;
+    font-size: 1.0em;
+    font-weight:600;
+    margin:0 !important;
+    padding:0px;
+  }
+
+  .article-content-meta-time a {
+    margin: 0 !important;
+    display: inline !important;
+  }
+
+  .article-content-meta-author {
+    margin-bottom: 0;
+    float: right;
+    display: inline;
+    margin-top: 0px;
+    color: white;
+    background-color: #303030;
+    word-wrap: break-word;
+
+
+  }
+
+  .article-content-main {
+    display: table-header-group;
+  }
+  .article-content-main h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0px;
+
+  }
+
+
+  .article-content-main p {
+    display: none;
+  }
+
+  .article-content-image {
+    display: none;
+    border: 1px solid #cbcbcb;
+    min-height: 160px;
+    margin-top: 5px;
+
+  }
+
+
+  .article-footer {
+    border-top: 1px solid #cbcbcb;
+    min-height: 30px;
+
+  }
+
+  .article-footer-cat {
+
+    border-right: 0px solid #cbcbcb !important;
+
+  }
+  .article-footer-cat p {
+    margin: 0;
+    line-height: 30px;
+  }
+
+  .article-footer-readmore {
+    display: none;
+    text-align: left !important;
+
+  }
+  .article-footer-readmore p {
+    margin: 0;
+    line-height: 30px;
+  }
+}

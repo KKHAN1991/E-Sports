@@ -1,0 +1,40 @@
+.site-main {
+
+}
+#blog-page {
+  margin-top: 20px;
+  @extend .container;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+#blog-page-article {
+  @extend .col-md-9;
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#blog-side-bar {
+  @extend .col-md-3;
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+}
+#blog-page .article-content-meta-time {
+  font-size:10px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  #blog-page .article-content-meta-time {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //Article
+  #blog-page {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

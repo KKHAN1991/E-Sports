@@ -1,0 +1,11 @@
+//Slider
+#front-page-slider {
+  @extend .row;
+  background-color: #303030;
+  margin-bottom: 20px;
+}
+
+#front-page-slider-main {
+  @extend .container;
+
+}
